@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recipe Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🍴 Recipe Finder</h1>
+        <p>Find delicious recipes using ingredients or dish names</p>
+    </header>
+
+    <main>
+
+        <section class="search-section">
+
+            <h2>Search for a Recipe</h2>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Enter dish name or ingredient..."
+                >
+
+                <select id="searchType">
+                    <option value="dish">Dish Name</option>
+                    <option value="ingredient">Ingredient</option>
+                </select>
+
+                <button onclick="searchRecipes()">
+                    🔍 Search
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section id="message"></section>
+
+
+        <section id="recipes" class="recipe-container"></section>
+
+
+        <section id="recipeDetails" class="details-container"></section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Recipe Finder App | Node.js + Express
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
