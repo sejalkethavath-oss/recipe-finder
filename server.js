@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(express.json());
@@ -103,5 +103,5 @@ app.get("/api/recipe/:id", async (req, res) => {
 
 // Start server
 app.listen(PORT, () => {
-    console.log(`Recipe Finder App running at http://localhost:${PORT}`);
+    console.log(`Recipe Finder App running on port ${PORT}`);
 });
