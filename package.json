@@ -1,0 +1,16 @@
+{
+  "name": "recipe-finder",
+  "version": "1.0.0",
+  "description": "Recipe Finder App using Node.js and Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}
